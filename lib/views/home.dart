@@ -1,36 +1,22 @@
 /*
  * @Author: ChangCheng
  * @Date: 2023-04-21 10:54:47
- * @LastEditTime: 2023-04-21 16:51:18
+ * @LastEditTime: 2023-04-24 09:34:38
  * @LastEditors: ChangCheng
  * @Description: 
  * @FilePath: \my_flutter_app\lib\views\home.dart
  */
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:get/get.dart';
 import 'package:my_flutter_app/views/tabIndex/tabIndex.dart';
-import 'package:my_flutter_app/widgets/pageContent.dart';
+import 'package:my_flutter_app/views/tabInfo/index.dart';
+import 'package:my_flutter_app/views/tabProfile/index.dart';
+import 'package:my_flutter_app/views/tabSearch/index.dart';
 
 List<Widget> tabViewList = [
   TabIndex(),
-  PageContent(
-      content: Container(
-        child: Text('搜索'),
-      ),
-      title: '搜索'),
-  PageContent(
-      content: Container(
-        child: Text('咨询'),
-      ),
-      title: '咨询'),
-  PageContent(
-      content: Container(
-        child: Text('我的'),
-      ),
-      title: '我的'),
+  TabSearch(),
+  TabInfo(),
+  TabProfile()
 ];
 
 List<BottomNavigationBarItem> barItemList = const [

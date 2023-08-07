@@ -1,7 +1,7 @@
 /*
  * @Author: ChangCheng
  * @Date: 2023-04-21 10:04:59
- * @LastEditTime: 2023-04-21 15:33:38
+ * @LastEditTime: 2023-04-26 16:10:48
  * @LastEditors: ChangCheng
  * @Description: 
  * @FilePath: \my_flutter_app\lib\main.dart
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
        unknownRoute: GetPage(name: '/notFound', page: () => NotFound()),
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      initialRoute: '/login',
+      initialRoute: '/loading',
       getPages:AppRoute.getRoute,
       theme: ThemeData(
         primarySwatch: Colors.green,
